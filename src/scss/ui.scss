@@ -178,6 +178,7 @@ input {
         color: $black;
         border: 1px solid $black;
         border-radius: 10px;
+        background-color: #fff;
         &:hover,
         &:active {
             border-color: $blue;
@@ -208,41 +209,67 @@ input {
     }
 }
 
-.breadcrumbs {
-    margin-top: 15px;
-    text-align: center;
+.pagination {
+    display: flex;
+    align-items: center;
+    margin-top: 58px;
+    &__btn,
     &__item {
+        margin: 0 10px;
+        width: 64px;
+        height: 64px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        font-size: 18px;
         font-weight: 500;
-        font-size: 36px;
-        line-height: 153%;
-        position: relative;
-        &:not(::first-letter) {
-            font-size: 2px;
-        }
-        &:not(:last-child) {
-            margin-right: 52px;
-        }
-        &:not(:first-child) {
-            &:before {
-                content: '';
-                z-index: 1;
-                position: absolute;
-                width: 10px;
-                height: 10px;
-                margin-right: 21px;
-                right: 100%;
-                top: 18px;
-                background-image: url(../img/breadcrumbs-arrow.svg);
-                background-position: center;
-                background-repeat: no-repeat;
-            }
+        color: $grey;
+        flex-shrink: 0;
+    }
+    &__item {
+        &--active {
+            color: $blue;
+            pointer-events: none;
         }
         &:hover {
-            color: #8E7E64;
+            color: $blue;
+        }
+    }
+    &__btn {
+        border: 1px solid $grey;
+        &:hover {
+            background-color: $blue;
+            border-color: $blue;
+            path {
+                fill: #fff;
+            }
+        }
+        &:first-child {
+            margin: 0 20px 0 0;
         }
         &:last-child {
-            color: #fff;
+            margin: 0 0 0 20px;
+        }
+        &--disabled {
             pointer-events: none;
+            path {
+                fill: $grey;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .pagination {
+        &__btn,
+        &__item {
+            width: 48px;
+            height: 48px;
+        }
+        &__item {
+            width: 25px;
+            margin: 0 3px;
         }
     }
 }

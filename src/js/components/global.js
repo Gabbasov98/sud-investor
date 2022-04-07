@@ -46,13 +46,22 @@ $(document).ready(function() {
     })
 
 
-    $(".tab").click(function() {
+    $(".projects__tab").click(function() {
         let path = $(this).attr("data-tab-path")
-        $(this).parents(".tab-parent").find(".tab").removeClass("tab--active")
-        $(this).parents(".tab-parent").find(`.tab[data-tab-path="${path}"]`).addClass("tab--active")
-        $(this).parents(".tab-parent").find(".tab__content").removeClass("tab__content--active")
-        $(this).parents(".tab-parent").find(`.tab__content[data-tab-path="${path}"]`).addClass("tab__content--active")
+        $(".projects__tab").removeClass("projects__tab--active")
+        $(`.projects__tab[data-tab-path="${path}"]`).addClass("projects__tab--active")
+        $(".projects__tab-content").removeClass("projects__tab-content--active")
+        $(`.projects__tab-content[data-tab-path="${path}"]`).addClass("projects__tab-content--active")
     })
 
+    $('.custom-select__dropdown-item[data-view]').click(function() {
+        let view = $(this).attr("data-view")
+        if (view == 1) {
+            $(".projects__view").removeClass("projects__view--table")
+        } else {
+            $(".projects__view").addClass("projects__view--table")
+        }
+    });
+    // 
 
 })

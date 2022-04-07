@@ -1,0 +1,664 @@
+.investments {
+    overflow: hidden;
+    padding-bottom: 50px;
+    margin-top: -24px;
+    &__inner {
+        position: relative;
+        padding: 160px 0;
+    }
+    &__desc {
+        max-width: 976px;
+        z-index: 2;
+        position: relative;
+    }
+    &__title {
+        font-weight: 500;
+        font-size: 72px;
+        line-height: 119%;
+        color: #5775FD;
+    }
+    &__text {
+        font-size: 18px;
+        line-height: 30px;
+        text-transform: capitalize;
+        color: #838181;
+        margin-top: 25px;
+    }
+    &__img {
+        position: absolute;
+        left: 900px;
+        top: 0;
+    }
+}
+
+.steps {
+    padding-top: 50px;
+    padding-bottom: 100px;
+    &__items {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 30px 50px;
+    }
+    &__item {
+        display: flex;
+        align-items: flex-start;
+        position: relative;
+        padding-right: 30px;
+        &:not(:last-child) {
+            &::after {
+                content: '';
+                position: absolute;
+                right: -8px;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                width: 16px;
+                height: 16px;
+                background: #AC84FE;
+                border-radius: 50%;
+            }
+            &::before {
+                content: '';
+                position: absolute;
+                right: -24px;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                width: 12px;
+                height: 12px;
+                background: #F4EEFF;
+                border-radius: 50%;
+            }
+        }
+    }
+    &__number {
+        font-weight: 800;
+        font-size: 96px;
+        line-height: 108px;
+        color: #F4EEFF;
+        position: relative;
+    }
+    &__text {
+        font-size: 18px;
+        line-height: 30px;
+        position: absolute;
+        right: 26px;
+        top: 59px;
+        max-width: 192px;
+        cursor: pointer;
+        &:hover {
+            text-decoration-line: underline;
+            color: #5775FD;
+        }
+    }
+}
+
+.information {
+    padding-top: 75px;
+    padding-bottom: 95px;
+    &__inner {
+        background: linear-gradient(269.92deg, #F4EEFF 22.27%, #D9E0FF 71.97%);
+        border-radius: 50px;
+        padding: 65px;
+        position: relative;
+    }
+    &__title {
+        font-weight: 500;
+        font-size: 48px;
+        line-height: 60px;
+        color: #5775FD;
+        max-width: 800px;
+    }
+    &__text {
+        font-size: 18px;
+        line-height: 30px;
+        color: #838181;
+        margin-top: 25px;
+    }
+    &__form {
+        margin-top: 32px;
+    }
+    .form-group {
+        &:not(:last-child) {
+            margin-bottom: 24px;
+        }
+        input {
+            max-width: 477px;
+            background: #FFFFFF;
+        }
+    }
+    &__btn {
+        width: 292px;
+        height: 84px;
+        margin-top: 64px;
+    }
+    &__img {
+        position: absolute;
+        right: 73px;
+        bottom: 0;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.investment {
+    padding-top: 95px;
+    padding-bottom: 90px;
+}
+
+.help {
+    padding-top: 90px;
+    padding-bottom: 90px;
+    &__items {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 42px;
+    }
+    &__item {
+        background: #FFFFFF;
+        box-shadow: 0px 4px 25px rgba(172, 132, 254, 0.15);
+        border-radius: 16px;
+        padding: 32px;
+        &-title {
+            max-width: 453px;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 36px;
+            color: #5775FD;
+        }
+    }
+    &__desc {
+        margin-top: 32px;
+    }
+    &__text {
+        font-size: 18px;
+        line-height: 30px;
+        color: #838181;
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
+    }
+}
+
+.terms {
+    overflow: hidden;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    &__inner {
+        position: relative;
+    }
+    &__img {
+        position: absolute;
+        left: 738px;
+        top: -25px;
+        width: 786px;
+        height: 841px;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &__title {
+        max-width: 686px;
+    }
+    &__left {
+        max-width: 675px;
+        position: relative;
+        z-index: 2;
+    }
+    &__desc {
+        margin-top: 24px;
+    }
+    &__text {
+        font-size: 18px;
+        line-height: 30px;
+        a {
+            color: #5775FD;
+        }
+        &:not(:last-child) {
+            margin-bottom: 24px;
+        }
+    }
+    &__list {
+        margin-bottom: 16px;
+        li {
+            font-size: 18px;
+            line-height: 30px;
+            color: #838181;
+        }
+    }
+    &__bottom-desc {
+        margin-top: 32px;
+    }
+    &__bottom-text {
+        font-size: 12px;
+        line-height: 20px;
+        color: #A8A7A7;
+    }
+}
+
+.problems {
+    padding: 90px 0;
+    &__title {
+        max-width: 1060px;
+    }
+    &__items {
+        margin-top: 64px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+    &__item {
+        background: #D9E0FF;
+        border-radius: 16px;
+        padding: 32px;
+        display: flex;
+        &-title {
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 150%;
+            flex-shrink: 0;
+        }
+        &-list {
+            margin-left: 32px;
+            li {
+                padding-left: 40px;
+                position: relative;
+                font-size: 18px;
+                line-height: 167%;
+                &:not(:last-child) {
+                    margin-bottom: 21px;
+                }
+                &:before {
+                    content: '';
+                    position: absolute;
+                    z-index: 1;
+                    width: 24px;
+                    height: 24px;
+                    border-radius: 50%;
+                    background-color: #fff;
+                    background-image: url(../img/check.svg);
+                    background-size: 13px auto;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    left: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+            }
+        }
+    }
+}
+
+.invest-info {
+    padding: 90px 0 180px;
+    &__inner {
+        background: linear-gradient(269.92deg, #F4EEFF 22.27%, #D9E0FF 71.97%);
+        border-radius: 50px;
+        padding: 64px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__title {
+        max-width: 475px;
+        font-size: 48px;
+        line-height: 129%;
+        font-weight: 500;
+        color: $blue;
+    }
+    &__form {
+        width: 477px;
+        &-group {
+            &:not(:last-child) {
+                margin-bottom: 24px;
+            }
+        }
+    }
+    &__btn {
+        width: 292px;
+        height: 84px;
+        margin-top: 48px;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .investments {
+        &__desc {
+            max-width: 800px;
+        }
+        &__title {
+            font-size: 62px;
+        }
+        &__img {
+            left: 830px;
+            width: 700px;
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .investments {
+        &__desc {
+            max-width: 732px;
+        }
+        &__title {
+            font-size: 57px;
+        }
+        &__img {
+            left: 680px;
+        }
+    }
+    .steps {
+        &__text {
+            top: 100px;
+            left: 0;
+        }
+    }
+    .information {
+        &__title {
+            font-size: 38px;
+            max-width: 766px;
+        }
+    }
+    .terms {
+        &__left {
+            max-width: 600px;
+        }
+        &__desc {
+            max-width: 600px;
+        }
+        &__img {
+            width: 700px;
+            height: 800px;
+            left: 610px;
+        }
+    }
+    .problems {
+        &__item {
+            &-title {
+                flex-shrink: 0.6;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .investments {
+        &__desc {
+            max-width: 600px;
+        }
+        &__title {
+            font-size: 47px;
+        }
+        &__img {
+            left: 560px;
+            width: 550px;
+        }
+    }
+    .information {
+        &__img {
+            width: 340px;
+            height: 540px;
+        }
+    }
+    .terms {
+        &__title {
+            max-width: 100%;
+        }
+        &__img {
+            position: static;
+            width: 100%;
+            height: 100%;
+            margin-top: 32px;
+        }
+        &__left {
+            max-width: 100%;
+            margin-top: 50px;
+        }
+        &__desc {
+            max-width: 100%;
+            margin-top: 0;
+        }
+    }
+    .problems {
+        padding: 50px 0;
+        &__item {
+            display: block;
+            &-list {
+                margin: 24px 0 0 0;
+            }
+        }
+    }
+    .invest-info {
+        padding: 50px 0 100px;
+        &__inner {
+            padding: 32px;
+            border-radius: 32px;
+        }
+        &__title {
+            font-size: 36px;
+            max-width: 350px;
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .investments {
+        margin-top: 0;
+        padding-bottom: 56px;
+        padding-top: 20px;
+        &__inner {
+            padding: 0;
+        }
+        &__img {
+            position: static;
+            max-width: 100%;
+            margin: 0 auto;
+        }
+        &__desc {
+            max-width: 100%;
+        }
+        &__title {
+            font-size: 48px;
+        }
+    }
+    .steps {
+        padding-bottom: 65px;
+        &__items {
+            grid-template-columns: 1fr;
+            gap: 32px 50px;
+        }
+        &__item {
+            align-items: center;
+            padding-right: 0;
+            &::before {
+                display: none;
+            }
+            &::after {
+                display: none;
+            }
+        }
+        &__text {
+            position: static;
+            max-width: 233px;
+            margin-left: 25px;
+        }
+    }
+    .information {
+        padding-top: 65px;
+        padding-bottom: 50px;
+        &__img {
+            display: none;
+        }
+    }
+    .investment {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .help {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        &__items {
+            grid-template-columns: 1fr;
+            gap: 24px;
+        }
+        &__title {
+            margin-bottom: 8px;
+        }
+    }
+    .terms {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .problems {
+        &__items {
+            gap: 24px;
+            margin-top: 24px;
+        }
+        &__item {
+            padding: 16px;
+            border-radius: 16px;
+            &-title {
+                font-size: 16px;
+                line-height: 175%;
+                br {
+                    display: none;
+                }
+            }
+            &-list {
+                margin-top: 16px;
+                li {
+                    font-size: 12px;
+                    line-height: 217%;
+                    &:not(:last-child) {
+                        margin-bottom: 16px;
+                    }
+                }
+            }
+        }
+    }
+    .invest-info {
+        &__inner {
+            border-radius: 16px;
+            padding: 16px;
+            display: block;
+        }
+        &__title {
+            max-width: 100%;
+            line-height: 165%;
+            font-size: 20px;
+        }
+        &__form {
+            max-width: 100%;
+            margin-top: 20px;
+        }
+        &__btn {
+            margin-top: 48px;
+            width: 100%;
+            height: 58px;
+            font-size: 14px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .investments {
+        &__inner {
+            padding: 0;
+        }
+        &__title {
+            font-size: 32px;
+            line-height: 138%;
+        }
+        &__text {
+            font-size: 12px;
+            line-height: 200%;
+            margin-top: 15px;
+        }
+    }
+    .steps {
+        &__number {
+            font-size: 64px;
+            line-height: 76px;
+        }
+        &__text {
+            font-size: 14px;
+            line-height: 26px;
+        }
+    }
+    .information {
+        &__inner {
+            padding: 16px;
+            border-radius: 16px;
+        }
+        &__title {
+            font-size: 20px;
+            line-height: 32px;
+            max-width: 100%;
+        }
+        &__text {
+            margin-top: 16px;
+            font-size: 12px;
+            line-height: 26px;
+        }
+        &__form {
+            margin-top: 16px;
+        }
+        &__btn {
+            height: 58px;
+            width: 100%;
+            margin-top: 48px;
+            font-size: 14px;
+        }
+    }
+    .help {
+        &__item {
+            padding: 16px;
+            &-title {
+                font-size: 16px;
+                line-height: 28px;
+            }
+        }
+        &__desc {
+            margin-top: 16px;
+        }
+        &__text {
+            font-size: 12px;
+            line-height: 26px;
+            &:not(:last-child) {
+                margin-bottom: 0;
+            }
+        }
+    }
+    .terms {
+        &__text {
+            font-size: 12px;
+            line-height: 26px;
+            &:not(:last-child) {
+                margin-bottom: 8px;
+            }
+        }
+        &__list {
+            margin-bottom: 8px;
+            li {
+                font-size: 12px;
+                line-height: 26px;
+            }
+        }
+        &__bottom-desc {
+            margin-top: 16px;
+        }
+        &__bottom-text {
+            font-size: 10px;
+            line-height: 20px;
+        }
+    }
+    .problems {
+        &__items {
+            grid-template-columns: 1fr;
+        }
+    }
+}

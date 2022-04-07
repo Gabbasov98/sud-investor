@@ -13,9 +13,19 @@
     color: $blue;
 }
 
+.display3 {
+    font-weight: 500;
+    font-size: 72px;
+    line-height: 119%;
+    color: $blue;
+}
+
 @media screen and (max-width: 1500px) {
     .display1 {
         font-size: 70px;
+    }
+    .display3 {
+        font-size: 62px;
     }
 }
 
@@ -24,6 +34,9 @@
         font-size: 58px;
     }
     .display2 {
+        font-size: 52px;
+    }
+    .display3 {
         font-size: 52px;
     }
 }
@@ -35,15 +48,20 @@
     .display2 {
         font-size: 45px;
     }
+    .display3 {
+        font-size: 48px;
+    }
 }
 
 @media screen and (max-width: 768px) {
-    .display1 {
+    .display1,
+    .display3,
+    .display2 {
         font-size: 32px;
         line-height: 138%;
     }
-    .display2 {
-        font-size: 24px;
-        line-height: 150%;
-    }
+    // .display2 {
+    //     font-size: 32px;
+    //     line-height: 150%;
+    // }
 }

@@ -1,0 +1,48 @@
+<div class="project-card__top">
+    <span class="project-card__num">Проект №1</span>
+    <h4 class="project-card__title">Тест</h4>
+    @@if(badge === "true"){
+    <div class="project-card__badge">Завершен</div>
+    }
+</div>
+
+<div class="project-card__items">
+    <div class="project-card__item">
+        <span class="project-card__item-title">Номинал долга:</span>
+        <span class="project-card__item-desc">435 345₽</span>
+    </div>
+    <div class="project-card__item">
+        <span class="project-card__item-title">Стоимость покупки: </span>
+        <span class="project-card__item-desc">45 534₽</span>
+    </div>
+    <div class="project-card__item">
+        <span class="project-card__item-title">Плановые затраты: </span>
+        <span class="project-card__item-desc">4 543 532₽</span>
+    </div>
+    <div class="project-card__item">
+        <span class="project-card__item-title">Плановый доход:</span>
+        <span class="project-card__item-desc"> 846 366₽</span>
+    </div>
+    <div class="project-card__item">
+        <span class="project-card__item-title">Ожидаемый срок взыскания:</span>
+        <span class="project-card__item-desc">2 352 435</span>
+    </div>
+    <div class="project-card__item">
+        <span class="project-card__item-title">Ожидаемая годовая доходность:</span>
+        <span class="project-card__item-desc">89%</span>
+    </div>
+    <div class="project-card__item">
+        <span class="project-card__item-title">Сумма инвестиций всего:</span>
+        <span class="project-card__item-desc">4 589 066₽</span>
+    </div>
+    <div class="project-card__item">
+        <span class="project-card__item-title">Свободно для инвестиций:</span>
+        <span class="project-card__item-desc">2 435₽</span>
+    </div>
+    <div class="project-card__item">
+        <span class="project-card__item-title">Инвестиции принимаются до:</span>
+        <span class="project-card__item-desc">3 254</span>
+    </div>
+</div>
+@@if(badge === "false"){
+<button class="project-card__btn btn btn-blue">Принять участие</button> }
