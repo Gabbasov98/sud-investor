@@ -1,0 +1,322 @@
+@import 'vars';
+.main {
+    overflow: hidden;
+    margin-top: -196px;
+    &__inner {
+        padding: 323px 0 200px 0;
+        position: relative;
+    }
+    &__title {
+        max-width: 785px;
+    }
+    &__desc {
+        margin-top: 24px;
+        line-height: 167%;
+        max-width: 785px;
+    }
+    &__btn {
+        width: 445px;
+        height: 84px;
+        margin-top: 64px;
+    }
+    &__img {
+        position: absolute;
+        left: 778px;
+        top: 36px;
+        width: 917px;
+        img {
+            width: 100%;
+            position: relative;
+            z-index: 2;
+        }
+    }
+}
+
+.money-back {
+    padding: 135px 0;
+    &__title {
+        max-width: 630px;
+    }
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 172px;
+    }
+    &__left {
+        padding-top: 90px;
+        flex-shrink: 0;
+        width: 670px;
+    }
+    &__img {
+        img {
+            width: 100%;
+        }
+    }
+    &__right {
+        flex-grow: 1;
+        max-width: 530px;
+        margin-left: 30px;
+    }
+    &__subtitle {
+        font-size: 32px;
+        line-height: 138%;
+        text-decoration-line: underline;
+        color: $blue;
+    }
+    &__list {
+        margin-top: 80px;
+        li {
+            line-height: 167%;
+            padding-left: 60px;
+            position: relative;
+            &:not(:last-child) {
+                margin-bottom: 71px;
+            }
+            &:before {
+                content: '';
+                position: absolute;
+                z-index: 1;
+                width: 44px;
+                height: 44px;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                border-radius: 50%;
+                background-color: #F4EEFF;
+                background-image: url(../img/check.svg);
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+        }
+    }
+    &__btn {
+        margin-top: 55px;
+        width: 499px;
+        height: 84px;
+        max-width: 100%;
+    }
+}
+
+.how-sell {
+    padding: 260px 0;
+    &__items {
+        margin-top: 111px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 95px 30px;
+    }
+    &__item {
+        background: #FFFFFF;
+        box-shadow: 0px 4px 25px rgba(172, 132, 254, 0.15);
+        border-radius: 16px;
+        min-height: 163px;
+        padding: 60px 32px 32px;
+        display: flex;
+        align-items: flex-end;
+        position: relative;
+        &-num {
+            position: absolute;
+            top: -47px;
+            left: 32px;
+            color: #F4EEFF;
+            font-weight: 800;
+            font-size: 96px;
+            line-height: 108px;
+        }
+        &-title {
+            line-height: 167%;
+        }
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .main {
+        &__inner {
+            padding-right: 0;
+        }
+        &__img {
+            left: 600px;
+        }
+        &__title,
+        &__desc {
+            max-width: 640px;
+        }
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .main {
+        &__inner {
+            padding: 240px 0 150px;
+        }
+        &__img {
+            width: 750px;
+        }
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .money-back {
+        padding: 50px 0;
+        &__inner {
+            margin-top: 50px;
+        }
+        &__left {
+            width: 550px;
+        }
+    }
+    .how-sell {
+        padding: 50px 0;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .main {
+        &__title,
+        &__desc {
+            max-width: 520px;
+        }
+        &__img {
+            width: 640px;
+            top: 80px;
+            left: 510px;
+        }
+    }
+    .money-back {
+        &__title {
+            max-width: 570px;
+        }
+        &__left {
+            width: 45%;
+        }
+        &__subtitle {
+            font-size: 25px;
+        }
+        &__list {
+            margin-top: 48px;
+            li {
+                &:not(:last-child) {
+                    margin-bottom: 32px;
+                }
+            }
+        }
+        &__btn {
+            margin-top: 32px;
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .main {
+        margin-top: 0;
+        &__inner {
+            padding: 0 0 50px;
+        }
+        &__img {
+            position: static;
+            max-width: 100%;
+            margin: 0 auto;
+        }
+        &__title {
+            margin-top: 20px;
+            max-width: 100%;
+        }
+        &__desc {
+            margin-top: 16px;
+            max-width: 100%;
+        }
+        &__btn {
+            margin-top: 32px;
+        }
+    }
+    .money-back {
+        &__title {
+            max-width: 470px;
+        }
+        &__inner {
+            display: block;
+        }
+        &__left {
+            width: 500px;
+            max-width: 100%;
+            margin: 0 auto;
+            padding-top: 0;
+        }
+        &__right {
+            max-width: 100%;
+            margin: 50px 0 0;
+        }
+    }
+    .how-sell {
+        &__items {
+            grid-template-columns: 1fr;
+            gap: 24px;
+            margin-top: 24px;
+        }
+        &__item {
+            display: block;
+            padding: 16px;
+            min-height: unset;
+            &-num {
+                font-size: 64px;
+                line-height: 76px;
+                position: static;
+                display: block;
+            }
+            &-title {
+                line-height: 217%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main {
+        &__desc {
+            line-height: 2;
+        }
+        &__btn {
+            max-width: 100%;
+            height: 58px;
+            font-size: 14px;
+        }
+    }
+    .money-back {
+        &__subtitle {
+            font-size: 16px;
+            line-height: 175%;
+        }
+        &__list {
+            margin-top: 32px;
+            li {
+                min-height: 32px;
+                padding-left: 48px;
+                line-height: 217%;
+                display: flex;
+                align-items: center;
+                &:not(:last-child) {
+                    margin-bottom: 16px;
+                }
+                &:before {
+                    content: '';
+                    position: absolute;
+                    z-index: 1;
+                    width: 32px;
+                    height: 32px;
+                    background-size: 18px auto;
+                }
+            }
+        }
+        &__btn {
+            height: 58px;
+            width: 343px;
+            max-width: 100%;
+            font-size: 14px;
+        }
+    }
+    .how-sell {
+        &__title {
+            max-width: 250px;
+        }
+    }
+}

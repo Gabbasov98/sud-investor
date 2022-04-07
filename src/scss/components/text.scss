@@ -1,0 +1,49 @@
+@import "../vars";
+.display1 {
+    font-weight: 500;
+    font-size: 88px;
+    line-height: 114%;
+    color: $blue;
+}
+
+.display2 {
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 122%;
+    color: $blue;
+}
+
+@media screen and (max-width: 1500px) {
+    .display1 {
+        font-size: 70px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .display1 {
+        font-size: 58px;
+    }
+    .display2 {
+        font-size: 52px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .display1 {
+        font-size: 50px;
+    }
+    .display2 {
+        font-size: 45px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .display1 {
+        font-size: 32px;
+        line-height: 138%;
+    }
+    .display2 {
+        font-size: 24px;
+        line-height: 150%;
+    }
+}

@@ -1,0 +1,31 @@
+@import "../vars";
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all ease-out .225s;
+    padding: 0;
+    &:focus {
+        box-shadow: none;
+    }
+}
+
+.btn-blue {
+    background: linear-gradient(90deg, #5775FD 0%, #AC84FE 100%);
+    border-radius: 16px;
+    font-weight: 400;
+    font-size: 24px;
+    color: #FFFFFF;
+    &:hover {
+        background: $blue;
+        color: #FFFFFF;
+    }
+    &:active {
+        background: #374FBD;
+        color: #FFFFFF;
+    }
+    &:disabled {
+        background: #838181;
+        color: #FFFFFF;
+    }
+}
