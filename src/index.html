@@ -69,6 +69,92 @@
                         </div>
                     </div>
                 </section>
+
+                <section class='consult'>
+                    @@include('components/page-blocks/_consult.html',{"img":"img/girl2.webp"})
+                </section>
+
+                <section class='what-buy'>
+                    <div class='container'>
+                        <h2 class="what-buy__title display2">Какие долги покупаем</h2>
+                        <div class='what-buy__items'>
+                            <div class="what-buy__item">
+                                @@include('components/page-blocks/_buy-card.html',{"img":"img/what-buy.svg","title":"Покупаем долги юридических лиц"})
+                            </div>
+                            <div class="what-buy__item">
+                                @@include('components/page-blocks/_buy-card.html',{"img":"img/what-buy2.svg","title":"Номиналом от 2 млн. рублей"})
+                            </div>
+                            <div class="what-buy__item">
+                                @@include('components/page-blocks/_buy-card.html',{"img":"img/what-buy3.svg","title":"Банкротов, организаций без имущества"})
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class='what-buy'>
+                    <div class='container'>
+                        <h2 class="what-buy__title display2">Какие долги не покупаем</h2>
+                        <div class='what-buy__items'>
+                            <div class="what-buy__item">
+                                @@include('components/page-blocks/_buy-card.html',{"img":"img/what-buy4.svg","title":"Не покупаем долги до 2 млн. руб."})
+                            </div>
+                            <div class="what-buy__item">
+                                @@include('components/page-blocks/_buy-card.html',{"img":"img/what-buy5.svg","title":"Не покупаем долги иностранных лиц"})
+                            </div>
+                            <div class="what-buy__item">
+                                @@include('components/page-blocks/_buy-card.html',{"img":"img/what-buy6.svg","title":"Не покупаем долги физических лиц"})
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class='how-much'>
+                    <div class='container'>
+                        <div class='how-much__inner'>
+                            <div class="how-much__left">
+                                <h2 class="how-much__title display2">За сколько <br> продать долг</h2>
+                                <div class="how-much__desc">Стоимость долга зависит от ряда факторов:</div>
+                                <button class="how-much__btn btn btn-blue">Узнать стоимость долга</button>
+                            </div>
+                            <div class="how-much__right">
+                                <div class="how-much__items">
+                                    <div class="how-much__item">
+                                        <div class="how-much__item-icon">
+                                            <img src="img/check.svg" alt="">
+                                        </div>
+                                        <div class="how-much__item-title">Номинал долга</div>
+                                    </div>
+                                    <div class="how-much__item">
+                                        <div class="how-much__item-icon">
+                                            <img src="img/assessment.svg" alt="">
+                                        </div>
+                                        <div class="how-much__item-title">Вероятность взыскания долга</div>
+                                    </div>
+                                    <div class="how-much__item">
+                                        <div class="how-much__item-icon">
+                                            <img src="img/request_page.svg" alt="">
+                                        </div>
+                                        <div class="how-much__item-title">Сумма затрат <br> на взыскание</div>
+                                    </div>
+                                    <div class="how-much__item">
+                                        <div class="how-much__item-icon">
+                                            <img src="img/date_range.svg" alt="">
+                                        </div>
+                                        <div class="how-much__item-title">Срок взыскания</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class='consult'>
+                    @@include('components/page-blocks/_consult.html',{"img":"img/man2.webp"})
+                </section>
+
+                <section class='contacts'>
+                    @@include('components/page-blocks/_contacts.html')
+                </section>
             </main>
             @@include('components/page-blocks/_footer.html')
         </div>
