@@ -45,6 +45,20 @@
     }
 }
 
+.modal2 {
+    .modal {
+        &-dialog {
+            max-width: 750px;
+            padding: 64px;
+        }
+        &__form {
+            &-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 1200px) {
     .modal {
         &-dialog {
