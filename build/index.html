@@ -63,7 +63,7 @@
                             <div class="main__desc">
                                 От 2 млн. рублей. <br> Выплачиваем до 80% в день подписания договора.
                             </div>
-                            <button class="main__btn btn btn-blue">Посмотрите как это работает</button>
+                            <button class="main__btn btn btn-blue" data-bs-toggle="modal" data-bs-target="#consultModal">Посмотрите как это работает</button>
                         </div>
                     </div>
                 </section>
@@ -78,7 +78,7 @@
                                 </div>
                             </div>
                             <div class="money-back__right">
-                                <div class="money-back__subtitle">Отвечаете на несколько простых вопросов
+                                <div class="money-back__subtitle" data-bs-toggle="modal" data-bs-target="#consultModal">Отвечаете на несколько простых вопросов
                                 </div>
                                 <ul class="money-back__list">
                                     <li>Оцениваем вероятность и сроки взыскания долга, предлагаем цену</li>
@@ -86,7 +86,7 @@
                                     <li>Вы получаете до 80% от суммы долга в день подписания договора</li>
                                     <li>Если предложение не устраивает - воспользуйтесь услугами по взысканию долга</li>
                                 </ul>
-                                <button class="money-back__btn btn btn-blue">Узнать условия взыскания долгов</button>
+                                <button class="money-back__btn btn btn-blue" data-bs-toggle="modal" data-bs-target="#consultModal">Узнать условия взыскания долгов</button>
                             </div>
                         </div>
                     </div>
@@ -185,7 +185,7 @@
                             <div class="how-much__left">
                                 <h2 class="how-much__title display2">За сколько <br> продать долг</h2>
                                 <div class="how-much__desc">Стоимость долга зависит от ряда факторов:</div>
-                                <button class="how-much__btn btn btn-blue">Узнать стоимость долга</button>
+                                <button class="how-much__btn btn btn-blue" data-bs-toggle="modal" data-bs-target="#consultModal">Узнать стоимость долга</button>
                             </div>
                             <div class="how-much__right">
                                 <div class="how-much__items">
@@ -297,12 +297,11 @@
         </div>
 
         <div class="modal__content">
-            <form action="" class="modal__form">
+            <form action="" class="modal__form validate-form">
                 <div class="modal__form-grid">
-                    <fieldset class='form-group form-group--error'>
+                    <fieldset class='form-group'>
                         <label>ИНН</label>
                         <input type='text' placeholder="Введите номер ИНН" />
-                        <span class="form-group__error-text">Error</span>
                     </fieldset>
                     <fieldset class='form-group'>
                         <label>Наименование должника</label>
@@ -310,7 +309,10 @@
                     </fieldset>
                     <fieldset class='form-group'>
                         <label>Телефон</label>
-                        <input type='tel' placeholder="Введите телефон" />
+                        <input class="required" type='tel' placeholder="Введите телефон" />
+                        <div class="form-group__error-text">
+                            <span class="form-group__error-required">Это поле обязательно</span>
+                        </div>
                     </fieldset>
                     <fieldset class='form-group'>
                         <label>Сумма долга, руб.</label>
@@ -318,7 +320,10 @@
                     </fieldset>
                     <fieldset class='form-group'>
                         <label>Имя</label>
-                        <input type='text' placeholder="Введите Ваше имя" />
+                        <input class="required" type='text' placeholder="Введите Ваше имя" />
+                        <div class="form-group__error-text">
+                            <span class="form-group__error-required">Это поле обязательно</span>
+                        </div>
                     </fieldset>
                     <fieldset class='form-group'>
                         <label>Получено судебное решение?</label>
@@ -336,7 +341,10 @@
                     </fieldset>
                     <fieldset class='form-group'>
                         <label>Почта</label>
-                        <input type='email' placeholder="Введите Вашу почту" />
+                        <input class="required" type='email' placeholder="Введите Вашу почту" />
+                        <div class="form-group__error-text">
+                            <span class="form-group__error-required">Это поле обязательно</span>
+                        </div>
                     </fieldset>
                     <fieldset class='form-group'>
                         <label>Получен исполнительный лист</label>

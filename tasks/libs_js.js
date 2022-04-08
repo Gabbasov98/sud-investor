@@ -1,6 +1,7 @@
 const plugins = [
     'node_modules/jquery/dist/jquery.js',
     'node_modules/bootstrap/dist/js/bootstrap.js',
+    'node_modules/jquery.maskedinput/src/jquery.maskedinput.js',
 ];
 const {
     src,

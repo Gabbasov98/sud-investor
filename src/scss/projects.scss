@@ -99,6 +99,9 @@
             line-height: 175%;
             border-bottom: 1px solid $grey;
         }
+        tbody tr {
+            cursor: pointer;
+        }
         th {
             color: $grey;
             vertical-align: top;
