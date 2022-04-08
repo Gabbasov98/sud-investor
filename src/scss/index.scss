@@ -627,6 +627,20 @@
     }
 }
 
+@media screen and (max-width: 576px) {
+    .main {
+        height: calc(100vh - 90px);
+        .container {
+            height: 100%;
+            display: flex;
+            align-items: center;
+        }
+        &__inner {
+            width: 100%;
+        }
+    }
+}
+
 @media screen and (max-width: 450px) {
     .how-much {
         &__btn {

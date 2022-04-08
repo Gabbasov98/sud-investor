@@ -662,3 +662,17 @@
         }
     }
 }
+
+@media screen and (max-width: 576px) {
+    .investments {
+        height: calc(100vh - 90px);
+        .container {
+            height: 100%;
+            display: flex;
+            align-items: center;
+        }
+        &__inner {
+            width: 100%;
+        }
+    }
+}
