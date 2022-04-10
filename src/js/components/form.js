@@ -12,7 +12,7 @@ $(".validate-form").submit(function(e) {
     e.preventDefault()
     let isRequiiredFilled
 
-    $(".required").each(function(index, el) {
+    $(this).find(".required").each(function(index, el) {
         var value = $(el).val();
         if (!value) {
             $(el).parents(".form-group").addClass("form-group--error")
