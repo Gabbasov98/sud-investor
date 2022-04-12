@@ -169,7 +169,8 @@ input {
         line-height: 167%;
         margin-bottom: 8px;
     }
-    input {
+    input,
+    select {
         padding: 0 16px;
         background-color: transparent;
         width: 100%;
@@ -185,6 +186,19 @@ input {
         }
         &::placeholder {
             color: #838181;
+        }
+    }
+    select {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        -ms-appearance: none;
+        -o-appearance: none;
+        appearance: none;
+        background-image: url(../img/select-arrow.svg);
+        background-repeat: no-repeat;
+        background-position: right 16px center;
+        &::-ms-expand {
+            display: none; // IE
         }
     }
     &--error {

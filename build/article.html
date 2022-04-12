@@ -154,17 +154,11 @@
                     </fieldset>
                     <fieldset class='form-group'>
                         <label>Получено судебное решение?</label>
-                        <div class="custom-select">
-                            <div class="custom-select__target">
-                                <input type="text" placeholder="Выберите ответ">
-                            </div>
-                            <div class="custom-select__dropdown">
-                                <div class="custom-select__dropdown-inner">
-                                    <div class="custom-select__dropdown-item">Да</div>
-                                    <div class="custom-select__dropdown-item">Нет</div>
-                                </div>
-                            </div>
-                        </div>
+                        <select>
+                           <option selected hidden>Выберите ответ</option>
+                           <option>Да</option>
+                           <option>Нет</option>
+                       </select>
                     </fieldset>
                     <fieldset class='form-group'>
                         <label>Почта</label>
@@ -174,18 +168,12 @@
                         </div>
                     </fieldset>
                     <fieldset class='form-group'>
-                        <label>Получен исполнительный лист</label>
-                        <div class="custom-select">
-                            <div class="custom-select__target">
-                                <input type="text" placeholder="Выберите ответ">
-                            </div>
-                            <div class="custom-select__dropdown">
-                                <div class="custom-select__dropdown-inner">
-                                    <div class="custom-select__dropdown-item">Да</div>
-                                    <div class="custom-select__dropdown-item">Нет</div>
-                                </div>
-                            </div>
-                        </div>
+                        <label>Получен исполнительный лист?</label>
+                        <select>
+                            <option selected hidden>Выберите ответ</option>
+                            <option>Да</option>
+                            <option>Нет</option>
+                        </select>
                     </fieldset>
                 </div>
                 <button class="modal__form-btn btn btn-blue">Оставить заявку</button>
